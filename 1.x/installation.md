@@ -1,30 +1,30 @@
-# Installation
+# インストール方法
 
 [[toc]]
 
-## Installing Jetstream
+## Jetstream のインストール
 
-If you have installed the [Laravel Installer](https://laravel.com/docs/installation#installing-laravel), you may use the `--jet` option to create a new Jetstream powered Laravel application:
+[Laravel Installer](https://laravel.com/docs/installation#installing-laravel) をインストール済みならば、`--jet` オプションで Jetstream を搭載した新しい Laravel アプリケーションを作成できます:
 
 ```bash
 laravel new project-name --jet
 ```
 
-After installing Jetstream via the Laravel Installer, you should migrate your database:
+Laravel Installer 経由で Jetstream をインストールした後、データベースのマイグレートを行う必要があります:
 
 ```bash
 php artisan migrate
 ```
 
-### Composer Installation
+### Composer を使ったインストール
 
-Alternatively, you may use Composer to install Jetstream into your new Laravel project:
+あるいは、次のように Composer を使って 新しい Laravel プロジェクトに Jetstream をインストールできます:
 
 ```bash
 composer require laravel/jetstream
 ```
 
-If you choose to install Jetstream through Composer, you should run the `jetstream:install` Artisan command. This command accepts the name of the stack you prefer (livewire or inertia). You are highly encouraged to read through the entire documentation of [Livewire](https://laravel-livewire.com) or [Inertia](https://inertiajs.com) before beginning your Jetstream project. In addition, you may use the `--teams` switch to enable team support:
+Composer を使って Jetstream をインストールする場合、`jetstream:install` Artisan コマンドを実行する必要があります。このコマンドは好みのスタック名を受け入れます。(livewire または inertia) Jetstream プロジェクトを始める前に、[Livewire](https://laravel-livewire.com) または [Inertia](https://inertiajs.com) のドキュメントに目を通すことを強くおすすめします。さらに、`--teams` スイッチを使うとチームのサポートを有効化できます:
 
 ```bash
 php artisan jetstream:install livewire
@@ -36,27 +36,27 @@ npm install && npm run dev
 php artisan migrate
 ```
 
-## Jetstream Structure
+## Jetstream の構造
 
-### Views / Pages
+### ビュー / ページ
 
-During installation, Jetstream will publish a variety of views and classes to your application. When using Livewire, views will be published to your `resources/views` directory. When using Inertia, "Pages" will be published to your `resources/js/Pages` directory. These views / pages contain every feature supported by Jetstream and you are free to customize them as needed. Think of Jetstream as a starting point for your application. Once you have installed Jetstream, you are free to customize anything you like.
+インストール時、Jetstream はアプリケーションにさまざまなビューやクラスを出力します。Livewire 使用時、ビューは `resources/views` ディレクトリに出力されます。Inertia 使用時、ページは `resources/js/Pages` ディレクトリに出力されます。これらビュー/ページは Jetstream がサポートする機能すべてが含まれており、必要に応じて自由にカスタマイズできます。Jetstream をアプリケーションの出発点と考えてください。Jetstream をインストールしたら、あなたの好きなものを自由にカスタマイズしてください。
 
-#### Dashboard
+#### ダッシュボード
 
-The "main" view of your application is published at `resources/views/dashboard.blade.php` when using Livewire and `resources/js/Pages/Dashboard.vue` when using Inertia. You are free to use this as a starting point for building the primary view of your application.
+アプリケーションの "メイン" ビューは、Livewire 使用の場合は `resources/views/dashboard.blade.php` に、Inertia 使用の場合は `resources/js/Pages/Dashboard.vue` に出力されます。アプリケーションの初期表示を構築する出発点として、これを自由に使用できます。
 
-### Actions
+### アクション
 
-In addition, "action" classes are published to your application's `app/Actions` directory. These action classes typically perform a single action and correspond to a single Jetstream feature, such as creating a team or deleting a user. You are free to customize these classes if you would like to tweak the backend behavior of Jetstream.
+さらに、"action" クラスは `app/Actions` ディレクトリに出力されます。これらのアクションクラスは通常、単一のアクションを実行します。チームの作成やユーザーの削除など単一の Jetstream 機能に対応しています。Jetstream のバックエンドの挙動を調整したい場合は、これらのクラスを自由にカスタマイズしてください。
 
 ### Tailwind
 
-During installation, Jetstream will scaffold your application's integration with the Tailwind CSS framework. Specifically, a `webpack.mix.js` file and `tailwind.config.js` file will be created. These two files are used to build your compiled application CSS output. You are free to modify these files as needed for your application.
+インストール時、Jetstream は Tailwind CSS フレームワークと統合してスキャフォールドします。具体的には、`webpack.mix.js` ファイルと `tailwind.config.js` ファイルを作成します。これら2つのファイルは CSS のビルドに使用されます。必要に応じてこれらのファイルを自由に変更できます。
 
-In addition, your `tailwind.config.js` file has been pre-configured to support PurgeCSS with the relevant directories properly specified depending on your chosen Jetstream stack.
+さらに、`tailwind.config.js` ファイルは、選択した Jetstream スタックに応じて、関連ディレクトリを適切に指定して PurgeCSS サポートを事前に設定されています。
 
-Your application's `package.json` file is already scaffolded with NPM commands that you may use to compile your assets:
+`package.json` ファイルには、アセットコンパイルに使える NPM コマンドがすでに用意されています:
 
 ```bash
 npm run dev
