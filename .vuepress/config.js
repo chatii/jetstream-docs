@@ -1,5 +1,5 @@
 module.exports = {
-    title: "Laravel Jetstream",
+    title: "Laravel Jetstream (日本語勝手訳)",
     description: "Beautifully designed application scaffolding for Laravel",
     base: '/',
 
@@ -19,15 +19,15 @@ module.exports = {
         logo: '/assets/img/logo.svg',
         displayAllHeaders: true,
         activeHeaderLinks: false,
-        searchPlaceholder: 'Press / to search',
+        searchPlaceholder: '/ 押下で検索',
         lastUpdated: false, // string | boolean
         sidebarDepth: 0,
 
         repo: 'laravel/jetstream',
 
-        docsRepo: 'laravel/jetstream-docs',
+        docsRepo: 'chatii/jetstream-docs',
         editLinks: true,
-        editLinkText: 'Help us improve this page!',
+        editLinkText: '翻訳のミス・漏れがありましたらお知らせください',
 
         nav: [
             { text: 'Home', link: '/', target: '_self' },
