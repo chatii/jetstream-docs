@@ -12,7 +12,7 @@ Jetstream は Tailwind CSS を使ってデザインされており、[Livewire](
 
 ## 利用できるスタック
 
-Laravel Jetstream は2つのフロントエンドスタックを選択できます: [Livewire](https://laravel-livewire.com) または [Inertia.js](https://inertiajs.com) いずれのスタックアプリケーション構築の生産的で強力な出発点を提供しますが、スタックの選択はあなたの好みのテンプレート言語によります。
+Laravel Jetstream は2つのフロントエンドスタックを選択できます: [Livewire](https://laravel-livewire.com) または [Inertia.js](https://inertiajs.com) いずれのスタックも、アプリケーション構築のための生産的で強力な出発点を提供しますが、スタックの選択はあなたの好みのテンプレート言語によります。
 
 ### Livewire + Blade
 
