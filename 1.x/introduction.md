@@ -4,33 +4,33 @@
 
 ## Laravel Jetstream
 
-Laravel Jetstream is a beautifully designed application scaffolding for Laravel. Jetstream provides the perfect starting point for your next Laravel application and includes login, registration, email verification, two-factor authentication, session management, API support via [Laravel Sanctum](https://github.com/laravel/sanctum), and optional team management.
+Laravel Jetstream は Laravel のための美しいデザインを持つアプリケーションのスキャフォールドです。Jetstream はあなたの次の Laravel アプリケーションのための完全な出発点を提供し、ログイン・登録・Eメール検証・2要素認証(2FA)・セッション管理・[Laravel Sanctum](https://github.com/laravel/sanctum) による API サポートと、オプションでチーム管理機能を含みます。
 
-Jetstream is designed using Tailwind CSS and offers your choice of [Livewire](./stacks/livewire.md) or [Inertia](./stacks/inertia.md) scaffolding.
+Jetstream は Tailwind CSS を使ってデザインされており、[Livewire](./stacks/livewire.md) または [Inertia](./stacks/inertia.md) を選択してスキャフォールドします。
 
 ![Screenshot of Laravel Jetstream](./../assets/img/preview.png)
 
-## Available Stacks
+## 利用できるスタック
 
-Laravel Jetstream offers your choice of two frontend stacks: [Livewire](https://laravel-livewire.com) and [Inertia.js](https://inertiajs.com). Each stack provides a productive, powerful starting point for building your application; however, the stack you choose will depend on your preferred templating language.
+Laravel Jetstream は2つのフロントエンドスタックを選択できます: [Livewire](https://laravel-livewire.com) または [Inertia.js](https://inertiajs.com) いずれのスタックアプリケーション構築の生産的で強力な出発点を提供しますが、スタックの選択はあなたの好みのテンプレート言語によります。
 
 ### Livewire + Blade
 
-Laravel Livewire is a library that makes it simple to build modern, reactive, dynamic interfaces using Laravel Blade as your templating language. This is a great stack to choose if you want to build an application that is dynamic and reactive but don't feel comfortable jumping into a full JavaScript framework like Vue.js.
+Laravel Livewire は Laravel Blade をテンプレート言語として用いた、モダン・リアクティブ・動的インターフェースをシンプルに構築できるライブラリです。動的でリアクティブなアプリケーションを構築したいけれど、Vue.js のような Javascript フレームワークに飛び込むのは気が引ける場合に最適です。
 
-When using Livewire, you may pick and choose which portions of your application will be a Livewire component, while the remainder of your application can be rendered as the traditional Blade templates you are used to.
+Livewire を使う時、アプリケーションのどこを Livewire コンポーネントにするかを抽出・選択できますが、それ以外の残りの部分は、今まで通りの Blade テンプレートとしてレンダリングできます。
 
 :::tip Livewire Screencasts
 
-If you're new to Livewire, check out the [screencasts available on the Livewire website](https://laravel-livewire.com/screencasts/installation).
+もし、初めて Livewire を使うなら、[screencasts available on the Livewire website](https://laravel-livewire.com/screencasts/installation) を参照してください。
 :::
 
 ### Inertia.js + Vue
 
-The Inertia.js stack provided by Jetstream uses [Vue.js](https://vuejs.org) as its templating language. Building an Inertia application is a lot like building a typical Vue application; however, you will use Laravel's router instead of Vue router. Inertia is a small library that allows you to render single-file Vue components from your Laravel backend by providing the name of the component and the data that should be hydrated into that component's "props".
+Jetstream が提供する Inertia.js スタックは Vue.js をテンプレート言語として用います。Inertia アプリケーションの構築は、典型的な Vue アプリケーションの構築に似ていますが、Vue ルーターの代わりに Laravel のルーターを使うことになります。Inertia は小さなライブラリで、コンポーネントの名前と、そのコンポーネントの "props" にハイドレートされるデータを提供することで、Laravel バックエンドから Vueのシングルファイルコンポーネントをレンダリングできます。
 
-In other words, this stack gives you the full power of Vue.js without the complexity of client-side routing. You get to use the standard Laravel router that you are used to.
+言い換えれば、このスタックはクライアントサイドの複雑なルーティングを伴わずに Vue.js のフルパワーを提供します。使い慣れた標準の Laravel ルーターを使います。
 
-The Inertia stack is a great choice if you are comfortable with and enjoy using Vue.js as your templating language.
+Inertia スタックは、Vue.js をテンプレート言語として使うことに慣れていて楽しければ、最適な選択です。
 
 
